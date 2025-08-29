@@ -1,0 +1,41 @@
+id,text,label
+ex-001,How do I reset my password?,helpful
+ex-002,Can I change my email address?,helpful
+ex-003,Where can I download last month's invoice?,helpful
+ex-004,Is two-factor authentication available?,helpful
+ex-005,How do I delete my account permanently?,helpful
+ex-006,Do you support Apple Pay?,helpful
+ex-007,Can I pause my subscription?,helpful
+ex-008,How long is the refund window for digital goods?,helpful
+ex-009,Where is the privacy policy link?,helpful
+ex-010,How to contact billing for VAT invoices?,helpful
+ex-011,The app keeps crashing on Android 14.,not_helpful
+ex-012,I never received the verification email.,helpful
+ex-013,I was double-charged this month.,helpful
+ex-014,How can I export my data?,helpful
+ex-015,How do I enable dark mode?,helpful
+ex-016,Can I add multiple users to one account?,helpful
+ex-017,Do you offer student discounts?,helpful
+ex-018,How to change the default language?,helpful
+ex-019,Why is my order still processing?,helpful
+ex-020,Can I get a receipt for my purchase?,helpful
+ex-021,How to link my Google account?,helpful
+ex-022,Does the API support webhooks?,helpful
+ex-023,How to regenerate an API key?,helpful
+ex-024,What is the rate limit for the API?,helpful
+ex-025,Can I extend my free trial?,helpful
+ex-026,How do I report a security issue?,helpful
+ex-027,Can I migrate my data from another app?,helpful
+ex-028,Where can I manage email notifications?,helpful
+ex-029,How do I update my credit card?,helpful
+ex-030,I can't find the settings page.,not_helpful
+ex-031,How to change the shipping address?,helpful
+ex-032,How do I track my order?,helpful
+ex-033,Can I combine coupons?,helpful
+ex-034,Is there a family plan?,helpful
+ex-035,What are supported file formats?,helpful
+ex-036,How do I import a CSV?,helpful
+ex-037,How can I recover a deleted project?,helpful
+ex-038,Where do I see system status?,helpful
+ex-039,Can I whitelist IP addresses?,helpful
+ex-040,How to request data deletion (GDPR)?,helpful

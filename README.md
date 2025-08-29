@@ -1,16 +1,22 @@
 # label-qa-starter
-Minimal tools to QA text classification labels exported from Label Studio.
+Minimal tools to QA text classification labels exported from *Label Studio*.
 
 ## Structure
 ```
 label-qa-starter/
 ├─ data/
-│  ├─ seeds.csv                 # unlabeled prompts for Label Studio import
-│  ├─ ls_export_sample.csv      # sample labels (for validator demo)
-│  └─ ls_export_sample_v2.csv   # second pass incl. label2 column (for κ demo)
-├─ validate_labels.py           # CSV/JSON/JSONL validator
-├─ agreement_labels.py          # Cohen's κ on columns or files
-├─ requirements.txt
+│  ├─ raw/
+│  │  └─ SMSSpamCollection        # original UCI TSV (label<TAB>text)
+│  ├─ ls_sms_unlabeled.csv        # derived id,text for Label Studio import
+│  ├─ ls_export_v1_r1.csv         # 1st pass labels (ham/spam/unclear)
+│  ├─ ls_export_v1_r2.csv         # 2nd pass labels (independent pass)
+│  ├─ ls_export_sample.csv        # tiny demo file for validator
+│  └─ ls_export_sample_v2.csv     # tiny demo + label2 for κ demo
+├─ tools/
+│  └─ sms_to_csv.py               # converts UCI TSV → id,text CSV (no labels)
+├─ validate_labels.py             # CSV/JSON/JSONL validator (schema/dupes/empties)
+├─ agreement_labels.py            # Cohen’s κ + confusion matrix
+├─ requirements.txt               # scikit-learn
 └─ README.md
 ```
 
@@ -35,13 +41,15 @@ python agreement_labels.py --file-a data/ls_export_sample_v2.csv --col-a label -
 python agreement_labels.py --file-a data/ls_export_sample.csv --file-b data/ls_export_sample_v2.csv --col-a label --col-b label
 ```
 
+## CSV Schema
+Required columns: id,text,label (optional: label2 for second pass).
+
 ## Notes
 - Change `--label-col` if your project uses a different `from_name` (e.g., `sentiment`).
 - Exports from Label Studio can be **CSV**, **JSON**, or **JSONL** (API). This tool supports all three.
 
 ## Dataset
 1. SMSSpamCollection (https://archive.ics.uci.edu/dataset/228/sms%2Bspam%2Bcollection)
-
 
 ## Result
 *Aug 29, 25*

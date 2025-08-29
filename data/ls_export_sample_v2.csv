@@ -1,0 +1,41 @@
+id,text,label,label2
+ex-001,How do I reset my password?,helpful,helpful
+ex-002,Can I change my email address?,helpful,helpful
+ex-003,Where can I download last month's invoice?,helpful,helpful
+ex-004,Is two-factor authentication available?,helpful,helpful
+ex-005,How do I delete my account permanently?,helpful,helpful
+ex-006,Do you support Apple Pay?,helpful,helpful
+ex-007,Can I pause my subscription?,helpful,helpful
+ex-008,How long is the refund window for digital goods?,helpful,helpful
+ex-009,Where is the privacy policy link?,helpful,helpful
+ex-010,How to contact billing for VAT invoices?,helpful,helpful
+ex-011,The app keeps crashing on Android 14.,not_helpful,not_helpful
+ex-012,I never received the verification email.,helpful,helpful
+ex-013,I was double-charged this month.,helpful,helpful
+ex-014,How can I export my data?,helpful,helpful
+ex-015,How do I enable dark mode?,helpful,helpful
+ex-016,Can I add multiple users to one account?,helpful,helpful
+ex-017,Do you offer student discounts?,helpful,helpful
+ex-018,How to change the default language?,helpful,helpful
+ex-019,Why is my order still processing?,helpful,helpful
+ex-020,Can I get a receipt for my purchase?,helpful,helpful
+ex-021,How to link my Google account?,helpful,not_helpful
+ex-022,Does the API support webhooks?,helpful,unclear
+ex-023,How to regenerate an API key?,helpful,helpful
+ex-024,What is the rate limit for the API?,helpful,not_helpful
+ex-025,Can I extend my free trial?,helpful,helpful
+ex-026,How do I report a security issue?,helpful,helpful
+ex-027,Can I migrate my data from another app?,helpful,helpful
+ex-028,Where can I manage email notifications?,helpful,helpful
+ex-029,How do I update my credit card?,helpful,helpful
+ex-030,I can't find the settings page.,not_helpful,not_helpful
+ex-031,How to change the shipping address?,helpful,helpful
+ex-032,How do I track my order?,helpful,helpful
+ex-033,Can I combine coupons?,helpful,helpful
+ex-034,Is there a family plan?,helpful,helpful
+ex-035,What are supported file formats?,helpful,helpful
+ex-036,How do I import a CSV?,helpful,helpful
+ex-037,How can I recover a deleted project?,helpful,helpful
+ex-038,Where do I see system status?,helpful,helpful
+ex-039,Can I whitelist IP addresses?,helpful,not_helpful
+ex-040,How to request data deletion (GDPR)?,helpful,helpful
