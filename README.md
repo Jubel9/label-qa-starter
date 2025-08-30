@@ -1,4 +1,5 @@
 # label-qa-starter
+![CI](https://github.com/Jubel9/label-qa-starter/actions/workflows/ci.yml/badge.svg)
 Minimal tools to QA text classification labels exported from *Label Studio*.
 
 ## Structure
@@ -14,9 +15,14 @@ label-qa-starter/
 │  └─ ls_export_sample_v2.csv     # tiny demo + label2 for κ demo
 ├─ tools/
 │  └─ sms_to_csv.py               # converts UCI TSV → id,text CSV (no labels)
+├─docs/
+│  └─ quality_notes.md            # Notes for quality of the annotation
+├─ examples/
+│  └─ README.md                   # Worked examples (with rationales)
 ├─ validate_labels.py             # CSV/JSON/JSONL validator (schema/dupes/empties)
 ├─ agreement_labels.py            # Cohen’s κ + confusion matrix
 ├─ requirements.txt               # scikit-learn
+├─ RUBRIC.md                      # Label definition, decision rules, tie-breakers, and edge-cases
 └─ README.md
 ```
 
@@ -46,20 +52,21 @@ Required columns: id,text,label (optional: label2 for second pass).
 
 ## Notes
 - Change `--label-col` if your project uses a different `from_name` (e.g., `sentiment`).
-- Exports from Label Studio can be **CSV**, **JSON**, or **JSONL** (API). This tool supports all three.
+- Exported file can be **CSV**, **JSON**, or **JSONL** (API). This tool supports all three.
 
 ## Dataset
-1. SMSSpamCollection (https://archive.ics.uci.edu/dataset/228/sms%2Bspam%2Bcollection)
+SMSSpamCollection (https://archive.ics.uci.edu/dataset/228/sms%2Bspam%2Bcollection)
 
 ## Result
-*Aug 29, 25*
+*Aug 29, 2025 (JST)*
 - items: 800/5574 (SMSSpamCollection)
-- label set: ['ham','spam','unclear']
+- label set: ["ham","spam","unclear"]
 - κ = 0.967
 - confusion matrix:
     [[670   0   0]
     [  2 121   0]
     [  5   0   2]]
+    rater A class counts: ham=670, spam=123, unclear=7 (sums of matrix rows).
 - Edge cases:
     1. Some messages have “…” in the middle, which causes confusion; this might be due to truncation or because the original message actually contains ellipses.
     2. Some advertising messages are convincing enough to be overlooked as `ham`; if not read carefully, they may be mistakenly labeled as `ham`.
