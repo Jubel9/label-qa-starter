@@ -79,7 +79,7 @@ SMSSpamCollection (https://archive.ics.uci.edu/dataset/228/sms%2Bspam%2Bcollecti
 
 **Aug 30, 2025 (JST)**
 - Items: 1151/5574 ((SMSSpamCollection))
-- Notes: Updated 200 new annotation in  *ls_export_r3.csv* and 150 new annotation in *ls_export_r4.csv*
+- Notes: Updated 200 new annotation in  *ls_export__v1_r3.csv* and 150 new annotation in *ls_export_v1_r4.csv*
 - Edge cases:
     1. Some messages contain phone numbers or website links; if not read carefully, they might be mistaken for `spam`.
     2. Some personal texts use full uppercase letters, which is typical in spam ads and can be misclassified if not read carefully.
