@@ -78,8 +78,8 @@ SMSSpamCollection (https://archive.ics.uci.edu/dataset/228/sms%2Bspam%2Bcollecti
     3. Some messages are not identifiable as correct English, probably because they were sent long ago and use slang, causing misunderstanding of the meaning of the words.
 
 **Aug 30, 2025 (JST)**
-- Items: 1001/5574 ((SMSSpamCollection))
-- Notes: Updated 201 new annotation in *ls_export_r3.csv*
+- Items: 1151/5574 ((SMSSpamCollection))
+- Notes: Updated 200 new annotation in  *ls_export_r3.csv* and 150 new annotation in *ls_export_r4.csv*
 - Edge cases:
     1. Some messages contain phone numbers or website links; if not read carefully, they might be mistaken for `spam`.
     2. Some personal texts use full uppercase letters, which is typical in spam ads and can be misclassified if not read carefully.
@@ -88,9 +88,9 @@ SMSSpamCollection (https://archive.ics.uci.edu/dataset/228/sms%2Bspam%2Bcollecti
     
     Format: csv
     
-    Total rows: 1001
+    Total rows: 1151
     
-    Unique ids: 1001
+    Unique ids: 1151
     
     Duplicate ids: 0
     
