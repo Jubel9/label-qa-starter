@@ -11,6 +11,7 @@ label-qa-starter/
 │  ├─ ls_sms_unlabeled.csv        # derived id,text for Label Studio import
 │  ├─ ls_export_v1_r1.csv         # 1st pass labels (ham/spam/unclear)
 │  ├─ ls_export_v1_r2.csv         # 2nd pass labels (independent pass)
+│  ├─ ls_export_v1_r3.csv         # 3rd pass labels (independent pass)
 │  ├─ ls_export_sample.csv        # tiny demo file for validator
 │  └─ ls_export_sample_v2.csv     # tiny demo + label2 for κ demo
 ├─ tools/
@@ -80,6 +81,6 @@ SMSSpamCollection (https://archive.ics.uci.edu/dataset/228/sms%2Bspam%2Bcollecti
 - Items: 1001/5574 ((SMSSpamCollection))
 - Notes: Updated 201 new annotation in *ls_export_r3.csv*
 - Edge cases:
-    1. Some messages contains phone numbers or website link, if not read carefully might be mistaken as `spam`.
-    2. Some personal texts using full uppercase letter, a typical `spam` advertising message and might be mistaken as one if not read carefully.
-    3. Some numbers might be censored as `&lt;DECIMAL&gt` or `&lt;#&gt` which are confusing if not really understand the context.
+    1. Some messages contain phone numbers or website links; if not read carefully, they might be mistaken for `spam`.
+    2. Some personal texts use full uppercase letters, which is typical in spam ads and can be misclassified if not read carefully.
+    3. Some numbers are censored as &lt;DECIMAL&gt; or &lt;#&gt;, which is confusing without context.
