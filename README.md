@@ -63,15 +63,19 @@ SMSSpamCollection (https://archive.ics.uci.edu/dataset/228/sms%2Bspam%2Bcollecti
 - label set: ["ham","spam","unclear"]
 - κ = 0.967
 - confusion matrix:
+
     [[670   0   0]
+
     [  2 121   0]
+
     [  5   0   2]]
+
     rater A class counts: ham=670, spam=123, unclear=7 (sums of matrix rows).
 - Edge cases:
     1. Some messages have “…” in the middle, which causes confusion; this might be due to truncation or because the original message actually contains ellipses.
     2. Some advertising messages are convincing enough to be overlooked as `ham`; if not read carefully, they may be mistakenly labeled as `ham`.
     3. Some messages are not identifiable as correct English, probably because they were sent long ago and use slang, causing misunderstanding of the meaning of the words.
-    
+
 **Aug 30, 2025 (JST)**
 - Items: 1001/5574 ((SMSSpamCollection))
 - Notes: Updated 201 new annotation in *ls_export_r3.csv*
