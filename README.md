@@ -84,3 +84,14 @@ SMSSpamCollection (https://archive.ics.uci.edu/dataset/228/sms%2Bspam%2Bcollecti
     1. Some messages contain phone numbers or website links; if not read carefully, they might be mistaken for `spam`.
     2. Some personal texts use full uppercase letters, which is typical in spam ads and can be misclassified if not read carefully.
     3. Some numbers are censored as &lt;DECIMAL&gt; or &lt;#&gt;, which is confusing without context.
+- Validator (*ls_export_r3.csv*):
+    
+    Format: csv
+    
+    Total rows: 1001
+    
+    Unique ids: 1001
+    
+    Duplicate ids: 0
+    
+    Errors found: 0
