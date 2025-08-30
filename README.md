@@ -58,7 +58,7 @@ Required columns: id,text,label (optional: label2 for second pass).
 SMSSpamCollection (https://archive.ics.uci.edu/dataset/228/sms%2Bspam%2Bcollection)
 
 ## Result
-*Aug 29, 2025 (JST)*
+**Aug 29, 2025 (JST)**
 - items: 800/5574 (SMSSpamCollection)
 - label set: ["ham","spam","unclear"]
 - κ = 0.967
@@ -71,3 +71,10 @@ SMSSpamCollection (https://archive.ics.uci.edu/dataset/228/sms%2Bspam%2Bcollecti
     1. Some messages have “…” in the middle, which causes confusion; this might be due to truncation or because the original message actually contains ellipses.
     2. Some advertising messages are convincing enough to be overlooked as `ham`; if not read carefully, they may be mistakenly labeled as `ham`.
     3. Some messages are not identifiable as correct English, probably because they were sent long ago and use slang, causing misunderstanding of the meaning of the words.
+**Aug 30, 2025 (JST)**
+- Items: 1001/5574 ((SMSSpamCollection))
+- Notes: Updated 201 new annotation in *ls_export_r3.csv*
+- Edge cases:
+    1. Some messages contains phone numbers or website link, if not read carefully might be mistaken as `spam`.
+    2. Some personal texts using full uppercase letter, a typical `spam` advertising message and might be mistaken as one if not read carefully.
+    3. Some numbers might be censored as `&lt;DECIMAL&gt` or `&lt;#&gt` which are confusing if not really understand the context.
